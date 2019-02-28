@@ -6,6 +6,7 @@ exports.up = function(knex, Promise) {
         tbl
             .text("name")
             .notNullable()
+            .unique()
             
         tbl.timestamps(true, true);
         
